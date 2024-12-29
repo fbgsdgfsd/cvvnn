@@ -1,0 +1,32 @@
+class PCGamer:
+    def __init__(self, cpu, gpu, ram, storage, motherboard, psu, case):
+        self.cpu ="Intel Core i9-11900K",
+        self.gpu ="NVIDIA GeForce RTX 3080"
+        self.ram =32,
+        self.storage =1000,
+        self.motherboard ="ASUS ROG Strix Z590-E", 
+        self.psu =750, 
+        self.case ="NZXT H510" 
+
+    def display_specs(self):
+        print("Configuração do PC Gamer Virtual:")
+        print(f"CPU: {self.cpu}")
+        print(f"GPU: {self.gpu}")
+        print(f"RAM: {self.ram} GB")
+        print(f"Armazenamento: {self.storage} GB")
+        print(f"Placa-mãe: {self.motherboard}")
+        print(f"Fonte de Alimentação: {self.psu} W")
+        print(f"Gabinete: {self.case}")
+
+# Exemplo de uso
+pc_gamer = PCGamer(
+    cpu="Intel Core i9-11900K",
+    gpu="NVIDIA GeForce RTX 3080",
+    ram=32,
+    storage=1000,
+    motherboard="ASUS ROG Strix Z590-E",
+    psu=750,
+    case="NZXT H510"
+)
+
+pc_gamer.display_specs()
